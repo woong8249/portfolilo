@@ -116,6 +116,38 @@ p {
 .navbar__menu__item:hover {
   background-color: var(--color-grey);
 }
-.navbar__menu__item.active {
-  /* border: 1px solid black; */
+
+/* Home */
+
+.home {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10rem;
+}
+.home__profile__picture {
+  width: 25rem;
+  border-radius: 10%;
+  padding: 2%;
+  /* margin: 2rem 0 0 2rem; * */
+}
+
+.home__discription {
+  text-align: center;
+}
+
+.home__btn {
+  border: none;
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin-top: 4rem;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.25s;
+  background-color: #6aafe6;
+  color: #d4dfe6;
+}
+.home__btn:hover {
+  transform: scale(1.1);
 }
