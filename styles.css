@@ -96,7 +96,7 @@ p {
   font-weight: var(--weight-bold);
   display: flex;
   align-items: center;
-  margin-right: 20px;
+  margin-left: 2rem;
 }
 .navbar__logo > img {
   width: 2rem;
@@ -125,14 +125,16 @@ p {
   padding-top: 10rem;
 }
 .home__profile__picture {
-  width: 25rem;
-  border-radius: 10%;
-  padding: 2%;
+  width: 33rem;
+  border-radius: 20%;
+  padding: 3%;
   /* margin: 2rem 0 0 2rem; * */
 }
 
 .home__discription {
   text-align: center;
+  padding-top: 1rem;
+  padding-top: 8rem;
 }
 
 .home__btn {
@@ -150,4 +152,44 @@ p {
 }
 .home__btn:hover {
   transform: scale(1.1);
+}
+
+/* About */
+#about {
+  margin-top: 6rem;
+  padding: 0 1rem 0 1rem;
+}
+
+.about__discription {
+  margin-bottom: 4rem;
+}
+.about__discription > h1 {
+  margin-bottom: 4rem;
+}
+.about__discription > p {
+  text-align: left;
+}
+.about__stack {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 8rem;
+}
+.stack {
+  text-align: center;
+}
+.stack__icon {
+  width: 7rem;
+  height: 7rem;
+  border: 2px solid var(--color-blue);
+  font-size: 2.8rem;
+  color: var(--color-blue);
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 7rem;
+  margin: auto;
+}
+.stack__title {
+  margin-top: 0.3rem;
+  margin-bottom: 2rem;
+  font-weight: var(--weight-semi-bold);
 }
