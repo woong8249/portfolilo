@@ -117,7 +117,8 @@ p {
   border-radius: 4px;
 }
 .navbar__menu__item:hover {
-  background-color: var(--color-grey);
+  background-color: var(--color-light-grey);
+  transition: background-color 200ms linear;
 }
 
 /* Home */
@@ -152,6 +153,7 @@ p {
   transition: 0.25s;
   background-color: #6aafe6;
   color: #d4dfe6;
+  cursor: pointer;
 }
 .home__btn:hover {
   transform: scale(1.1);
@@ -278,9 +280,84 @@ p {
   margin: auto;
   width: 10rem;
   height: 4px;
-  background-color: var(--color-black);
+  background-color: var(--color-dark-grey);
 }
 .skill__value {
   background-color: var(--color-orange);
   height: 100%;
+}
+
+/* Project */
+
+.projects__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 1100px;
+}
+.project {
+  width: 45%;
+  margin: 2rem 0;
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--color-blue);
+  /* opacity: 0.8; */
+
+  margin-right: 2rem;
+  border-radius: 1rem;
+}
+.project:hover {
+  background-color: var(--color-dark-white);
+  transition: background-color 200ms linear;
+}
+
+.project__description {
+  padding: 0 2rem;
+  align-items: center;
+  margin: auto;
+}
+.project__description > p {
+  font-size: small;
+}
+.project__btn {
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+}
+.project__description .btn__type1 {
+  border: none;
+  display: inline-block;
+  padding: 1rem 1rem;
+  margin-top: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.25s;
+  background-color: #6aafe6;
+  color: #d4dfe6;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+.btn__type2 {
+  border: none;
+  display: inline-block;
+  padding: 1rem 1rem;
+  margin-top: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.25s;
+  background-color: #4a7889;
+  color: #d4dfe6;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+.project__description button:hover {
+  transform: scale(1.1);
 }
