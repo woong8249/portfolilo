@@ -257,6 +257,7 @@ p {
   padding: 1rem;
   line-height: 50%;
   color: var(--color-black);
+  cursor: pointer;
 }
 .skillset li:hover {
   background-color: var(--color-dark-white);
@@ -298,23 +299,23 @@ p {
   max-width: 1100px;
 }
 .project {
-  width: 45%;
-  margin: 2rem 0;
-  display: flex;
+  margin: 1rem 0;
   padding: 1rem;
+  /* max-width: 30rem; */
+  display: flex;
   align-items: center;
   justify-content: space-around;
   background-color: var(--color-blue);
-  /* opacity: 0.8; */
-
-  margin-right: 2rem;
   border-radius: 1rem;
 }
 .project:hover {
   background-color: var(--color-dark-white);
   transition: background-color 200ms linear;
 }
-
+.project img {
+  padding-left: 0.5rem;
+  width: 8rem;
+}
 .project__description {
   padding: 0 2rem;
   align-items: center;
@@ -360,4 +361,31 @@ p {
 }
 .project__description button:hover {
   transform: scale(1.1);
+}
+
+/* Contact */
+#contact {
+  background-color: var(--color-blue);
+  display: flex;
+  flex-flow: nowrap column;
+  align-items: center;
+}
+.contact__title,
+.contact__email {
+  margin: 0 0 0.5rem 0;
+}
+.contact__email {
+  font-weight: var(--weight-semi-bold);
+}
+.contact__links i {
+  margin: 0.3rem;
+  font-size: 1.5rem;
+}
+.contact__links i:hover {
+  transform: scale(1.3, 1.3);
+  cursor: pointer;
+}
+.contact__right {
+  font-size: var(--font-micro);
+  margin-top: 10px;
 }
