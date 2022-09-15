@@ -59,7 +59,6 @@ h1 {
   font-size: var(--font-large);
   font-weight: var(--weight-bold);
   color: var(--color-black);
-  /* margin: 16px 0px; */
   margin-bottom: 4rem;
 }
 
@@ -200,8 +199,8 @@ p {
 
 .about__career {
   display: flex;
-  align-items: center;
-  margin: 1rem 0rem;
+  text-align: center;
+  margin: 1rem auto;
 }
 .about__career > img {
   width: 7.5rem;
@@ -213,13 +212,17 @@ p {
 .about__career__date {
   font-size: small;
 }
-
+.about__career__discription {
+  font-size: smaller;
+}
 .about__education {
   display: flex;
+  text-align: center;
+  margin: 1rem auto;
   align-items: center;
 }
 .about__education__discription {
-  margin-left: 1rem;
+  margin-left: 3rem;
 }
 .about__education__date {
   font-size: small;
@@ -243,12 +246,18 @@ p {
 .skillset {
   display: flex;
   justify-content: space-around;
-  background-color: var(--color-light-grey);
+  /* border: 1px solid black; */
   text-align: center;
   padding-bottom: 2rem;
   border-radius: 10px;
   margin: auto;
-  max-width: 1100px;
+  max-width: 900px;
+}
+
+.skillset > div {
+  border-radius: 6px;
+  background-color: var(--color-light-grey);
+  flex-shrink: 1;
 }
 .skillset li {
   border: 1px solid var(--color-dark-grey);
@@ -268,7 +277,7 @@ p {
   margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
-  width: 10rem;
+  width: 85%;
 }
 .skill__title {
   margin: 4rem;
@@ -279,7 +288,7 @@ p {
 }
 .skill__bar {
   margin: auto;
-  width: 10rem;
+  width: 85%;
   height: 4px;
   background-color: var(--color-dark-grey);
 }
@@ -294,14 +303,14 @@ p {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  margin: auto;
+  justify-content: center;
   max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
 }
 .project {
-  margin: 1rem 0;
+  margin: 1rem 1rem;
   padding: 1rem;
-  /* max-width: 30rem; */
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -388,4 +397,54 @@ p {
 .contact__right {
   font-size: var(--font-micro);
   margin-top: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .home {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .home img {
+    width: 60%;
+  }
+  .home__discription {
+    padding-top: 0;
+  }
+
+  /* .project__list {
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+  } */
+}
+
+@media screen and (max-width: 784px) {
+  /* section */
+  section {
+    text-align: center;
+  }
+  /* nav */
+  #navbar {
+    flex-direction: column;
+  }
+
+  /* about */
+  .about__discription {
+    align-items: center;
+  }
+  .about__career {
+    width: 60%;
+  }
+  .about__education {
+    width: 60%;
+  }
+  /* skill */
+  .skillset {
+    flex-direction: column;
+    max-width: 500px;
+  }
+  .skillset > div {
+    margin: 1rem 0;
+  }
 }
