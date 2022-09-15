@@ -84,7 +84,7 @@ p {
 }
 
 /* Navbar */
-#navbar {
+.navbar {
   width: 100vw;
   position: fixed;
   display: flex;
@@ -200,6 +200,7 @@ p {
 .about__career {
   display: flex;
   text-align: center;
+  align-items: center;
   margin: 1rem auto;
 }
 .about__career > img {
@@ -207,7 +208,7 @@ p {
   height: 5rem;
   border: 1px solid var(--color-blue);
   border-radius: 15%;
-  margin-right: 1rem;
+  margin-right: 3rem;
 }
 .about__career__date {
   font-size: small;
@@ -237,7 +238,7 @@ p {
 
 /* skills */
 
-#skills {
+.skills {
   background-color: var(--color-yellow);
 }
 .skills__description {
@@ -373,7 +374,7 @@ p {
 }
 
 /* Contact */
-#contact {
+.contact {
   background-color: var(--color-blue);
   display: flex;
   flex-flow: nowrap column;
@@ -425,7 +426,7 @@ p {
     text-align: center;
   }
   /* nav */
-  #navbar {
+  .navbar {
     flex-direction: column;
   }
 
