@@ -34,7 +34,7 @@
   box-sizing: border-box;
 }
 section {
-  padding: 3rem;
+  padding: 7rem;
 }
 body {
   font-family: "Open Sans", sans-serif;
@@ -86,12 +86,14 @@ p {
 /* Navbar */
 .navbar {
   width: 100vw;
+  /* height: 17vh; */
   position: fixed;
   display: flex;
   justify-content: space-between;
   background-color: var(--color-blue);
   align-items: center;
   padding: 1rem;
+  z-index: 1;
 }
 .navbar__logo {
   font-size: var(--font-medium);
@@ -156,6 +158,8 @@ p {
 }
 .home__btn:hover {
   transform: scale(1.1);
+  color: white;
+  transition: color 200ms linear;
 }
 
 /* About */
@@ -271,7 +275,27 @@ p {
 }
 .skillset li:hover {
   background-color: var(--color-dark-white);
+  transition: background-color 200ms linear;
 }
+
+.skill__btn {
+  text-align: end;
+  margin-right: 10%;
+  font-size: small;
+  color: var(--color-orange);
+  font-weight: var(--weight-semi-bold);
+  transition: all 200ms linear;
+  opacity: 0;
+}
+.active {
+  text-align: end;
+  margin-right: 10%;
+  font-size: small;
+  color: var(--color-orange);
+  font-weight: var(--weight-semi-bold);
+  transition: all 200ms linear;
+}
+
 .skill {
   margin: auto;
   margin-top: 1rem;
@@ -371,10 +395,13 @@ p {
 }
 .project__description button:hover {
   transform: scale(1.1);
+  color: white;
+  transition: color 200ms linear;
 }
 
 /* Contact */
 .contact {
+  padding: 2rem;
   background-color: var(--color-blue);
   display: flex;
   flex-flow: nowrap column;
