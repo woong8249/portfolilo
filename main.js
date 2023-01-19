@@ -12,19 +12,6 @@ contact_me_button.addEventListener("click", e => {
   contact.scrollIntoView({ behavior: "smooth" });
 });
 
-// It help to know user clickPoint
-// window.addEventListener("scroll", () => {
-//   for (const key in skill__btn) {
-//     if (isNaN(key)) continue;
-//     if (skill__btn[key].className === "skill__btn") {
-//       skill__btn[key].classList.replace("skill__btn", "active");
-//     }
-//     setTimeout(() => {
-//       skill__btn[key].classList.replace("active", "skill__btn");
-//     }, "400");
-//   }
-// });
-
 // It make to go selected point (Navbar)
 for (const key in navbar__meun__item) {
   if (isNaN(key)) continue;
