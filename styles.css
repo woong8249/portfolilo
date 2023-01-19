@@ -67,6 +67,7 @@ h1 {
   color: var(--color-blue);
   margin-bottom: 2rem;
   text-align: left;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 summary {
   color: var(--color-light-grey);
@@ -81,16 +82,16 @@ h2.sub__title {
 }
 
 h2 {
-  font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
   color: var(--color-black);
   margin: 2rem 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   /* margin: 2rem 0; */
   /* text-align: left; */
 }
 
 h3 {
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: var(--weight-regular);
   color: var(--color-black);
 }
@@ -228,14 +229,14 @@ p {
   padding-bottom: 2rem;
   border-radius: 10px;
   margin: auto;
-  max-width: 1170px;
+  max-width: 1070px;
 }
 
 .skillset > div {
   border-radius: 6px;
   /* background-color: var(--color-light-grey); */
   flex-shrink: 1;
-  width: 350px;
+  width: 330px;
   border: 2px solid black;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   margin-bottom: 2rem;
@@ -256,7 +257,7 @@ p {
   padding-top: 10px;
   line-height: 20px;
   color: var(--color-grey);
-  font-size: small;
+  font-size: 11px;
   text-align: left;
   padding: 10px 15px 0 15px;
 }
