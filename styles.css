@@ -39,7 +39,7 @@ section {
   border-bottom: 2px solid var(--color-blue);
 }
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   cursor: default; /* 마우스커서 */
 }
@@ -94,6 +94,7 @@ h3 {
   font-size: 1rem;
   font-weight: var(--weight-regular);
   color: var(--color-black);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .subheading {
   margin-bottom: 3rem;
@@ -104,9 +105,11 @@ p {
   color: var(--color-black);
   margin: 4px 0;
   line-height: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .plain__text {
   font-size: medium;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Navbar */
