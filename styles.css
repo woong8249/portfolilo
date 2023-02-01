@@ -421,6 +421,21 @@ p {
   margin-left: 2rem;
   cursor: pointer;
 }
+.btn__type3 {
+  border: none;
+  display: inline-block;
+  padding: 1rem 1rem;
+  margin-top: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.25s;
+  background-color: var(--color-blue);
+  color: #d4dfe6;
+  margin-left: 2rem;
+  cursor: pointer;
+}
 .project__description button:hover {
   transform: scale(1.1);
   color: white;
